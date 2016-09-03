@@ -12,7 +12,7 @@ var World = {
 			Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
-		this.tracker = new AR.ClientTracker("assets/magazine.wtc", {
+		this.tracker = new AR.ClientTracker("assets/magazine.wtc", { //TARGET IMAGE
 			onLoaded: this.worldLoaded
 		});
 
@@ -21,7 +21,7 @@ var World = {
 		*/
 
 		/* Create overlay for page one */
-		var imgOne = new AR.ImageResource("assets/imageOne.png");
+		var imgOne = new AR.ImageResource("assets/imageOne.png"); //WHAT WE WANT TO OVERLAP ON THE TARGET IMAGE 
 		var overlayOne = new AR.ImageDrawable(imgOne, 1, {
 			offsetX: -0.15,
 			offsetY: 0
